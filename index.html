@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chrismax</title>
    <link href="https://fonts.cdnfonts.com/css/nunito" rel="stylesheet">
-   
+   <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 <style>
+  
  @import url('https://fonts.cdnfonts.com/css/nunito');
                 
      * {
@@ -486,7 +487,6 @@ font-family: 'Nunito', sans-serif;
     color:#ec1944;
     position: relative;
     font-family: 'Nunito', sans-serif;
-    padding-left: 65px;
     margin-bottom: 10px;
   }
   .about-container .tag::before{
@@ -516,7 +516,7 @@ font-family: 'Nunito', sans-serif;
     color: #555;
     font-weight: 400;
     margin-bottom: 20px;
-    max-width: 600px; 
+    width:550px;
     font-family: 'Nunito', sans-serif;
   }
   
@@ -538,11 +538,12 @@ font-family: 'Nunito', sans-serif;
     flex: 1;
     display: flex;
     justify-content: center;
+    width: 100%;
   }
 .about-image img{
-    max-width: 100%;
+    width: 573px;
     border-radius: 10px;
-    height: auto;
+    height:390px ;
     object-fit: cover;
   }
 @media (max-width:768px) {
@@ -923,6 +924,9 @@ font-family: 'Nunito', sans-serif;
 .event-tabs1{
   display: none;
 }
+.event-tabs2{
+  display: none;
+}
 .event-tabs a{
     color: #000;
     background:#f0f3f2;
@@ -1029,71 +1033,978 @@ font-family: 'Nunito', sans-serif;
 }
 @media (max-width:768px){
   .event-poster{
-    padding: 60px 40px;
+    padding: 60px 20px;
   }
   .event-tabs{
     display: none;
-    margin: 40px 0 20px;
-    flex-wrap: wrap;
-    gap: 12px;
-    justify-content: center;
   }
-  .event-tabs a,.event-tabs .btn-1-active{
-    width: 180px;
-    padding: 14px 20px;
-    font-size: 16px;
-  }
-  .event-f{
+  .event-tabs1{
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    position: relative;
+    gap: 10px;
+    margin: 30px 0;
     width: 100%;
-    padding: 70px 20px 30px;
-    gap: 20px;
   }
-  
-  .event-tabs1,.btn-1-active{
+  .event-tabs1 a{
     width: 100%;
     height: 48px;
     background: #ec1944;
     color: #fff;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     font-family: 'Nunito', sans-serif;
+    text-decoration: none;
     display: flex;
     align-items: center;
+  }
+  .event-tabs2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin:30px 0;
+    width: 100%;
+  }
+  .event-tabs2 a{
+    width: 100%;
+    height: 48px;
+    background: #f2f2f2;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .event-f{
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 30px;
+    gap: 20px;
   }
   .event-f .image2{
     width: 100%;
     height:100%;
     margin-left: 0;
-    
   }
   .event-card{
-    max-width: 100%;
     width: 100%;
+    max-width: 100%;
   }
   .event-card h3{
-    font-size: 24px;
+    font-size: 26px;
     line-height: 30px;
+    font-family: 'Nunito', sans-serif;
   }
   .event-card p{
     font-size: 18px;
     margin:20px 0px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .event-card  .time{
+    font-size: 18px;
+    margin: 12px 0px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .button-1{
+    position: static;
+    align-items: center;
+   margin: 75px 240px 0px;
+   
+    
+    
+  }
+}
+@media (max-width:425px){
+  .event-poster{
+    padding: 60px 20px;
+  }
+  .event-tabs{
+    display: none;
+  }
+  .event-tabs1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px 0;
+    width: 100%;
+  }
+  .event-tabs1 a{
+    width: 100%;
+    height: 48px;
+    background: #ec1944;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  .event-tabs2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin:30px 0;
+    width: 100%;
+  }
+  .event-tabs2 a{
+    width: 100%;
+    height: 48px;
+    background: #f2f2f2;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .event-f{
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 30px;
+    gap: 20px;
+  }
+  .event-f .image2{
+    width: 100%;
+    height:100%;
+    margin-left: 0;
+  }
+  .event-card{
+    width: 100%;
+    max-width: 100%;
+  }
+  .event-card h3{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .event-card p{
+    font-size: 17px;
+    margin:20px 0px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .event-card  .time{
+    font-size: 17px;
+    margin: 12px 0px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .button-1{
+    position: static;
+    align-items: center;
+   margin:45px 95px 10px;
+   padding: 14px 23px;
+   
+    
+    
+  }
+}
+@media (max-width:375px){
+  .event-poster{
+    padding: 60px 20px;
+  }
+  .event-tabs{
+    display: none;
+  }
+  .event-tabs1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 30px 0;
+    width: 100%;
+  }
+  .event-tabs1 a{
+    width: 100%;
+    height: 48px;
+    background: #ec1944;
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  .event-tabs2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin:30px 0;
+    width: 100%;
+  }
+  .event-tabs2 a{
+    width: 100%;
+    height: 48px;
+    background: #f2f2f2;
+    color: #000;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+  }
+  
+  .event-f{
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 30px;
+    gap: 20px;
+  }
+  .event-f .image2{
+    width: 100%;
+    height:100%;
+    margin-left: 0;
+  }
+  .event-card{
+    width: 100%;
+    max-width: 100%;
+  }
+  .event-card h3{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Nunito', sans-serif;
+  }
+  .event-card p{
+    font-size: 16px;
+    margin:20px 0px;
+    font-family: 'Nunito', sans-serif;
   }
   .event-card  .time{
     font-size: 16px;
     margin: 12px 0px;
+    font-family: 'Nunito', sans-serif;
   }
   .button-1{
-    align-self: center;
-    justify-content: center;
-    margin-top: 40px;
-    position: absolute;
+    position: static;
+    align-items: center;
+   margin:24px 70px 10px;
+   padding: 14px 20px;
+   
+    
     
   }
 }
+.plans{
+  padding: 80px 40px;
+  background:#fff;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+.special{
+   font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+        font-family: 'Nunito', sans-serif;
+    display: inline-block;
+    align-items: center;
+    gap: 12px;
+    padding: 0px 0px 16px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    color: #ec1944;
+}
+.special::before{
+      content: "";
+    width: 40px;
+    height: 1px;
+    background:#ec1944;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-right: 10px; 
+}
+.plans h2{
+  font-size: 38px;
+  font-weight: 700;
+    line-height: 40px;
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+    margin:10px 0px 75px 0px;
+}
+.card{
+   display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+margin-top: 50px;
+}
+.card-header{
+  background: #ffff;
+  color: #525252;
+  border-radius: 10px;
+  padding: 40px 35px;
+  margin: 0;
+  box-shadow: 0 25px 98px rgba(0,0,0 /0.3%);
+  width: 360px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  border: 1px solid #f0f3f2;
+}
+.card-header h3{
+  font-size: 28px;
+  font-weight: 700;
+    line-height: 36px;
+    font-family: 'Nunito', sans-serif;
+    color: #000;
+}
+.card-header h4{
+  font-size: 50px;
+  font-weight: 600;
+  color: #ec1944;
+  margin-bottom: 20px;
+  font-family: 'Nunito', sans-serif;
+  border-bottom: 1px solid #c7c7d5;
+  width: 100%;
+  padding-bottom: 18px;
+}
+.card-header ul{
+  list-style: none;
+  padding: 0;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.card-header ul li{
+  margin-top: 8px;
+  font-size: 18px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  line-height: 1.5;
+  font-family: 'Nunito', sans-serif;
+  color: #525252;
+}
 
+.btnn{
+   padding: 14px 32px;
+    color: #fff;
+    background:#ec1944;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    border: 0;
+    width: fit-content;
+    width: 100%;
+
+}
+@media (max-width:768px){
+
+  .plans{
+    padding: 40px 20px;
+  }
+  .card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    
+  }
+  .card-header{
+    padding: 30px 40px;
+    text-align: left;
+  }
+  .plans h2{
+    font-size: 30px;
+    line-height: 36px;
+    margin:0px 0px 75px 0px;
+  }
+}
+@media (max-width:480px){
+
+  .plans{
+    padding: 30px 10px;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  .card-header{
+    padding: 20px 20px;
+    text-align: left;
+    width: 100%;
+  }
+  .plans h2{
+    font-size: 28px;
+    line-height: 32px;
+    margin:0px 0px 50px 0px;
+  }
+  .btnn{
+    font-size: 16px;
+    padding: 14px 30px;
+    width: 320px;
+    margin-left: 20px;
+  }
+}
+@media (max-width:375px){
+
+  .plans{
+    padding: 30px 10px;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
+  .card-header{
+    padding: 20px 20px;
+    text-align: left;
+    width: 100%;
+  }
+  .plans h2{
+    font-size: 24px;
+    line-height: 32px;
+    margin:0px 0px 50px 0px;
+  }
+  .btnn{
+    font-size: 16px;
+    padding: 14px 28px;
+    width: 270px;
+  }
+}
+.register{
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+overflow: hidden;
+min-height: 90vh;
+width: 100%;
+background:#ec1944 url(./images/tree-bg.png) no-repeat center;
+background-size: cover;
+}
+
+.register-box{
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+}
+.reg{
+     font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+        font-family: 'Nunito', sans-serif;
+    display: inline-block;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.reg::before{
+      content: "";
+    width: 40px;
+    height: 1px;
+    background:#fff;
+    display: inline-block;
+    letter-spacing: 2px;
+    margin-right: 15px;
+}
+.register-box h2{
+  font-size: 40px;
+  font-weight: 700;
+    line-height: 40px;
+    color: #fff;
+    margin-bottom: 50px;
+    font-family: 'Nunito', sans-serif;
+}
+.form-click{
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 32px;
+  
+}
+.form-click input{
+ border-radius: 10px;
+ width: 170px;
+ height: 50px;
+padding: 0px 18px;
+ border: none;
+  font-size: 16px;
+  font-weight: 400;
+  font-family: 'Nunito', sans-serif;
+  color: #000;
+  background: #fff;
+  box-sizing: border-box;
+  outline: none;
+}
+.form-click button{
+  height: 50px;
+  width: 170px;
+    background: #1fb66d;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 17px;
+    line-height: 17px;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    border: 0;
+    flex-shrink: 0;
+}
+@media (max-width:768px){
+  .register{
+    padding: 90px 16px 110px;
+    min-height: auto;
+  }
+  .register-box{
+    max-width: 100%;
+    padding: 0px 20px;
+  }
+  .reg{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .register-box h2{
+    font-size: 30px;
+    line-height: 38px;
+    margin-bottom: 50px;
+  }
+  .form-click{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    justify-content: center;
+  }
+  .form-click input{
+    width: 100%;
+    height: 46px;
+    font-size: 16px;
+  border-radius: 10px;
+  }
+  .form-click button{
+    width: 100%;
+    height: 46px;
+    font-size: 16px;
+    border-radius: 10px;
+    margin-top: 4px;
+  }
+}
+@media (max-width:480px){
+  .register{
+    padding: 80px 16px 100px;
+    min-height: auto;
+  }
+  .register-box{
+    padding: 70px 0px 90px;
+  }
+  .reg{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+ 
+  .register-box h2{
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 50px;
+    white-space: nowrap;
+  }
+  .form-click{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    justify-content: center;
+  }
+  .form-click input{
+    width: 100%;
+    height: 46px;
+    font-size: 16px;
+  border-radius: 10px;
+  }
+  .form-click button{
+    width: 100%;
+    height: 46px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+}
+@media (max-width:375px){
+  .register{
+    padding: 0px 16px;
+  }
+  .register-box{
+    max-width: 100%;
+    text-align: center;
+  }
+  .reg{
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+  }
+ 
+  .register-box h2{
+    font-size: 24px;
+    max-width: 260px;
+    line-height: 1.5;
+    margin:0 auto 18px;
+    white-space: normal;
+    margin-bottom: 50px;
+    max-width: 300px;
+  }
+  .form-click{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 6px;
+    margin-top: 8px;
+  }
+  .form-click input{
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+  border-radius: 10px;
+  padding: 10px 14px;
+  }
+  .form-click button{
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+}
+.testimonials{
+  padding: 90px 0px;
+  background:#fff;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+}
+.special1{
+    font-size: 14px;
+      font-weight:600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      gap: 12px;
+      margin-bottom: 20px;
+          font-family: 'Nunito', sans-serif;
+      display: inline-block;
+      align-items: center;
+      color: #ec1944;
+}
+.special1::before{
+  content: "";
+  width: 50px;
+  height: 1px;
+  background:#ec1944;
+  display: inline-block;
+  margin-right: 20px; 
+}
+.testimonials h2{
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 40px;
+  font-family: 'Nunito', sans-serif;
+  color: #000;
+  margin:0px 0px 75px 0px;
+}
+.container1{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.card-wrap1{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: stretch;
+}
+.card01,.card11,.card12{
+  background: #f2f8f7;
+  border-radius: 10px;
+  padding:35px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  max-height: 340px;
+  text-align: left;
+}
+.text{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  width: 300px;
+  color: #1b8853;
+  font-family: 'Nunito', sans-serif;
+  flex-grow: 1;
+  margin-bottom: 10px;
+}
+
+.user{
+  display: flex;
+  align-items: center;
+}
+.user img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 12px;
+  margin-top: 8px;
+}
+.user-info h4{
+  font-size: 18px;
+  font-weight: 700;
+    line-height: 28px;
+    color: #000;
+    margin:0px 0px 2px;
+    font-family: 'Nunito', sans-serif;
+}
+.user-info .city{
+  font-size: 16px;
+  font-weight: 400;
+    line-height: 20px;
+    color: #525252;
+    font-family: 'Nunito', sans-serif;
+}
+@media (max-width:768px){
+  .testimonials{
+    padding: 60px 25px;
+  }
+  .testimonials h2{
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    margin:0px 0px 50px 0px;
+  }
+  .container1{
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .card-wrap1{
+   display: flex;
+   justify-content: center;
+   gap: 20px;
+   flex-wrap: wrap;
+  }
+  .card01,.card11{
+    width: 48%;
+    min-height: 300px;
+  }
+  .card12{
+    display: none;
+  }
+  .text{
+    font-size: 20px;
+    width: 280px;
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+}
+@media (max-width:480px){
+  .testimonials{
+    padding: 40px 15px;
+  }
+  .testimonials h2{
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    margin:0px 0px 40px 0px;
+  }
+  .container1{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .card-wrap1{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+  }
+  .card01{
+    width: 100%;
+    min-height: auto;
+  }
+  .card12,.card11{
+    display: none;
+  }
+  .text{
+    font-size: 20px;
+    width: 100%;
+    line-height: 1.5;
+  }
+}
+@media (max-width:375px){
+  .testimonials{
+    padding: 30px 10px;
+  }
+  .testimonials h2{
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    margin:0px 0px 30px 0px;
+  }
+  .container1{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .card-wrap1{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+  }
+  .card01{
+    width: 100%;
+    min-height: auto;
+  }
+  .card12,.card11{
+    display: none;
+  }
+  .text{
+    font-size: 20px;
+    width: 100%;
+    line-height: 1.5;
+  }
+}
+.footer{
+  background: linear-gradient(135deg,#0b2b2e,#02191c);
+  color: #ffffff;
+  padding: 130px 0 100px 0 ;
+  width: 100%;
+}
+
+
+.footer-container{
+  max-width: 1200px;
+  margin:auto;
+  padding: 0 20px 60px;
+  display: grid;
+ grid-template-columns: repeat(3,1fr);
+ gap: 40px;
+  position: relative;
+  z-index: 2;
+}
+.footer-box h3{
+  font-size: 18px;
+  font-weight: 700;
+    line-height: 32px;
+    margin-bottom: 20px;
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+}
+.footer-box p{
+  font-size: 18px;
+  font-weight: 400;
+    line-height: 28px;
+    width: 400px;
+    color: #ccc;
+    font-family: 'Nunito', sans-serif;
+}
+.logo1{
+  font-size: 30px;
+  font-weight: 700;
+    line-height: 36px;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+.terms,.privacy{
+  display: inline-block;
+  font-size: 15px;
+  color: #ffff;
+  margin-right: 20px;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
+  margin-bottom: 10px;
+  font-weight: 400;
+  opacity: 0.8;
+  line-height: 28px;
+  margin-top: 20px;
+}
+.privacy:hover,
+.terms:hover{
+  text-decoration: underline;
+  color: #fff;
+}
+.email1{
+  color: #4fd1c5;
+  font-weight: 400;
+  margin-bottom: 15px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+}
+.social-icons{
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+.social-icons i{
+  width: 40px;
+  height: 40px;
+  background: #0f3a3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+.newsletter1{
+  margin-top: 12px;
+}
+.newsletter1 p{
+  font-size: 16px;
+  font-weight: 400;
+    line-height: 28px;
+    color: #ccc;
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 10px;
+}
+.newsletter1 input{
+  width: 100%;
+  height: 48px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 12px;
+  font-size: 14px;
+  font-family: 'Nunito', sans-serif;
+font-size: 400;
+}
+.newsletter1 button{
+  padding: 12px 20px;
+    background: #ec1944;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 16px;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    border: 0;
+}
+.footer-bottom{
+  text-align: center;
+  padding: 20px 0;
+  border-top: 1px solid #ffffff33;
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  color: #ccc;
+}
+.cap1{
+    width: 22px;
+    height: 24px;
+    object-fit: cover;
+    position: absolute;
+    bottom: 300px;
+    left: 41px;
+}
 
 
 </style>
@@ -1141,7 +2052,7 @@ font-family: 'Nunito', sans-serif;
 </div>
 <div class="container">
   <video autoplay muted loop class="bg-video">
-    <source src="./101659-video-2160.mp4" type="video/mp4"/>
+    <source src="./images/101659-video-2160.mp4" type="video/mp4"/>
   </video>
  
   <div class="inner">
@@ -1206,8 +2117,7 @@ font-family: 'Nunito', sans-serif;
     </div>
     <div class="event-tabs1">
      <a class="btn-1-active" href="#dec24">December 24</a>
-       <a class="btn-1" href="#dec25">December 25</a>
-        <a href="#dec26" class="btn-1">December 26</a>
+      
     </div>
     <div id="dec24" class="event-f">
       
@@ -1228,6 +2138,138 @@ font-family: 'Nunito', sans-serif;
 <button class="button-1">Book Now</button>
     </div>
     </div>
+    <div class="event-tabs2">
+     <a class="btn-1" href="#dec25">December 25</a>
+        <a href="#dec26" class="btn-1">December 26</a>
+        </div>
 </section>
+
+ <section class="plans">
+    <span class="special">Our Plans</span>
+    <h2>Event Pricing</h2>
+    <div class="card">
+        <div class="card-header">
+          <img src="./images/kid.svg" alt="kid" class="image-fluid">
+            <h3>Kids</h3>
+            <h4>$35</h4>
+        
+        <ul>
+            <li>✔️Visiting Santa</li>
+            <li>✔️Dining</li>
+            <li>✔️Ice Skating</li>
+            <li>✔️Christmas Tree</li>
+        </ul>
+        <button class="btnn">Book Now</button>
+        </div>
+        <div class="card-header">
+          <img src="./images/person.svg" alt="kid" class="image-fluid">
+            <h3>Adults</h3>
+            <h4>$47</h4>
+        <ul>
+            <li>✔️Ice Zone</li>
+            <li>✔️Christmas Shopping</li>
+            <li>✔️Workshops</li>
+            <li>✔️Live Music</li>
+        </ul>
+        <button class="btnn">Book Now</button>
+        </div>
+        <div class="card-header">
+          <img src="./images/group.svg" alt="kid" class="image-fluid">
+            <h3>Family</h3>
+            <h4>$99</h4>
+        <ul>
+            <li>✔️Chat with Santa</li>
+            <li>✔️Christmas Decorations</li>
+            <li>✔️Ice Carvers</li>
+            <li>✔️Raffle</li>
+        </ul>
+        <button class="btnn">Book Now</button>
+        </div>
+    </div>
+   </section>
+   <section class="register">   
+ <div class="register-box">
+        <span class="reg">Register Now</span>
+        <h2>Are You Ready To Join Our Event?</h2>
+        <form class="form-click">
+            <input type="text" placeholder="Name" name="name" >
+            <input type="tel" placeholder="Phone" name="number">
+            <input type="email" placeholder="Email" name="Email">
+            <button>Register</button>
+        </form>
+    </div>
+    </section>
+     <section class="testimonials">
+        <span class="special1">Testimonials</span>
+        <h2>Reviews Of Our Clients</h2>
+        <div class="conatiner1">
+            <div class="card-wrap1">
+        <div class="card01">
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis laudantium neque fuga at. Itaque reiciendis quo consectetur veritatis tenetur!</p>
+           <div class="user">
+            <img src="./images/team1.jpg" alt="John">
+            <div class="user-info">
+            <h4>John Wilson</h4>
+            <p class="city">Example City</p>
+            </div>
+            </div>
+        </div>
+        <div class="card11">
+            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores facilis, veritatis magni nam dolore iste nisi ea illum delectus! Ducimus?</p>
+            <div class="user">
+            <img src="./images/team2.jpg" alt="John">
+            <div class="user-info">
+            <h4>Julia Sakura</h4>
+            <p class="city">Example City</p>
+            </div>
+            </div>
+        </div>
+        <div class="card12">
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita fugiat atque commodi nam autem aliquam voluptatibus vero a recusandae</p>
+            <div class="user">
+            <img src="./images/team3.jpg" alt="John">
+            <div class="user-info">
+            <h4>Roy Linderson</h4>
+            <p class="city">Example City</p>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+     <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+               <img src="images/cap.png" alt="cap"class="cap1">
+                <h2 class="logo1">Chrismax</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur tenetur, blanditiis nobis tempora molestiae optio aliquid at consequatur repellendus alias molestias ad laudantium adipisci saepe, esse odio soluta, illo voluptatum.</p>
+                <a href="#" class="terms">Terms and conditions</a>
+                <a href="#" class="privacy">Privacy Policy</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact Details</h3>
+                <p>Email:</p>
+                <p class="email1">info@example.com</p>
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Join Our Newsletter</h3>
+                <p>Sign up to receive our Newsletter</p>
+                <div class="newsletter1">
+                    <p>Email*</p>
+                    <input type="email" placeholder="Your Email...."><br>
+                    <button>Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy;2025 Chrismax.All rights reserved.</p>
+        </div>
+    </footer>
     </body>
     </html>
