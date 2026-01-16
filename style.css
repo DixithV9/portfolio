@@ -1463,6 +1463,7 @@ margin-top: 50px;
   padding: 100px 20px;
   display: flex;
   justify-content: center;
+  align-items: center;
 overflow: hidden;
 min-height: 90vh;
 width: 100%;
