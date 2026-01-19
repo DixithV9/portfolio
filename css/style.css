@@ -38,17 +38,17 @@ html, body {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
 }
 
-.navbar.scrolled .nav-links a,
+.navbar.scrolled .navbar-links a,
 .navbar.scrolled .logo-text {
   color: #000;
 }
 
-.navbar.scrolled .search,
-.navbar.scrolled .moon {
+.navbar.scrolled .navbar-search,
+.navbar.scrolled .navbar-moon {
   filter: invert(0);
 }
 
-.logo {
+.navbar-logo {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -69,24 +69,24 @@ html, body {
   font-size: 30px;
 }
 
-.nav-links {
+.navbar-links {
   list-style: none;
   display: flex;
   gap: 25px;
   margin-left: 350px;
 }
-.nav-links a {
+.navbar-links a {
   text-decoration: none;
   color: #fff;
   font-family: "Nunito", sans-serif;
   font-weight: 700;
   font-size: 17px;
 }
-.nav-links a:hover {
+.navbar-links a:hover {
   color: #ec1944;
 }
 
-.nav-actions {
+.navbar-actions {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -94,7 +94,7 @@ html, body {
   margin-right: 100px;
 }
 
-.search {
+.navbar-search {
   filter: invert(1);
   font-size: 20px;
   width: 20px;
@@ -104,7 +104,7 @@ html, body {
   margin-right: 5px;
 }
 
-.moon {
+.navbar-moon {
   filter: invert(1);
   font-size: 20px;
   width: 20px;
@@ -114,7 +114,7 @@ html, body {
   margin-left: 5px;
 }
 
-.cap {
+.navbar-cap {
   width: 24px;
   height: 24px;
   object-fit: cover;
@@ -123,7 +123,7 @@ html, body {
   left: 115px;
 }
 
-.btn {
+.navbar-button {
   color: #fff;
   background: #ec1944;
   padding: 15px 30px;
@@ -139,7 +139,7 @@ html, body {
   border: 0;
 }
 
-.btn1 {
+.hero-button {
   color: #fff;
   background: #ec1944;
   padding: 15px 30px;
@@ -155,7 +155,7 @@ html, body {
   border: 0;
 }
 
-.bg-video {
+.hero-video {
   position: absolute;
   inset: 0;
   width: 100%;
@@ -164,7 +164,7 @@ html, body {
   z-index: 2;
 }
 
-.container {
+.hero {
   position: relative;
   min-height: 100vh;
   width: 100%;
@@ -174,7 +174,7 @@ html, body {
   overflow: hidden;
 }
 
-.container1 {
+.hero-content {
   max-width: 600px;
   display: flex;
   flex-direction: column;
@@ -183,7 +183,7 @@ html, body {
   z-index: 5;
   height: auto;
 }
-.container1 h2 {
+.hero-content h2 {
   font-family: "Nunito", sans-serif;
   font-size: 60px;
   line-height: 1.2;
@@ -192,7 +192,7 @@ html, body {
   width: 500px;
   text-align: left;
 }
-.container1 p {
+.hero-content p {
   font-size: 18px;
   color: #fff;
   line-height: 1.6;
@@ -204,7 +204,7 @@ html, body {
   padding-top: 10px;
 }
 
-.inner {
+.hero-container {
   position: relative;
   z-index: 2;
   margin-bottom: 50px;
@@ -217,13 +217,13 @@ html, body {
   padding-left: 10px;
 }
 
-.santaimage {
+.hero-image {
   object-fit: contain;
   width: 690px;
   height: auto;
 }
 
-.hamburger {
+.navbar-hamburger {
   display: none;
   cursor: pointer;
   font-family: "Nunito", sans-serif;
@@ -286,36 +286,36 @@ html, body {
     margin-left: 0;
     padding-left: 0;
   }
-  .logo {
+  .navbar-logo {
     padding-left: 30px;
     padding-top: 0;
   }
-  .container1 {
+  .hero-content {
     align-items: flex-start;
     text-align: left;
     width: 100%;
     margin-top: 0;
     gap: 0;
   }
-  .container1 h2 {
+  .hero-content h2 {
     font-size: 54px;
     width: 600px;
     line-height: 1.2;
     text-align: left;
     margin-top: 0px;
   }
-  .container1 p {
+  .hero-content p {
     font-size: 16px;
     text-align: left;
     width: 600px;
     margin-top: 0px;
     margin-bottom: 20px;
   }
-  .container {
+  .hero {
     margin-top: 0;
     padding: 0;
   }
-  .inner {
+  .hero-container {
     flex-direction: column;
     text-align: left;
     justify-content: flex-start;
@@ -323,28 +323,28 @@ html, body {
     padding: 100px 40px;
     height: auto;
   }
-  .btn1 {
+  .navbar-button {
     align-self: flex-start;
     margin-top: 0;
   }
-  .cap {
+  .navbar-cap {
     position: absolute;
     top: 20px;
     left: 52px;
     width: 18px;
     height: auto;
   }
-  .santaimage {
+  .hero-image {
     object-fit: contain;
     width: 690px;
     height: auto;
     align-self: flex-start;
     padding-top: 20px;
   }
-  .nav-links {
+  .navbar-links {
     display: none;
   }
-  .nav-actions {
+  .navbar-actions {
     display: none;
   }
   .mobile-controls {
@@ -352,7 +352,7 @@ html, body {
     align-items: center;
     gap: 10px;
   }
-  .hamburger {
+  .navbar-hamburger {
     display: block;
     font-size: 24px;
     cursor: pointer;
@@ -370,38 +370,38 @@ html, body {
     padding: 12px 16px;
     height: auto;
   }
-  .logo {
+  .navbar-logo {
     padding-left: 0;
     padding-top: 0;
     align-items: center;
     font-size: 22px;
   }
-  .container1 {
+  .hero-content {
     align-items: flex-start;
     text-align: left;
     max-width: 100%;
     margin-top: 0;
     gap: 0;
   }
-  .container1 h2 {
+  .hero-content h2 {
     font-size: 28px;
     width: 350px;
     line-height: 1.2;
     text-align: left;
     margin-bottom: 6px;
   }
-  .container1 p {
+  .hero-content p {
     font-size: 16px;
     text-align: left;
     width: 100%;
     margin-top: 0px;
     margin-bottom: 10px;
   }
-  .container {
+  .hero {
     margin-top: 0;
     padding-bottom: 20px;
   }
-  .inner {
+  .hero-container {
     flex-direction: column;
     text-align: left;
     justify-content: flex-start;
@@ -409,31 +409,31 @@ html, body {
     padding: 85px 15px;
     height: auto;
   }
-  .btn1 {
+  .navbar-button {
     align-self: flex-start;
     margin-top: 4px;
     padding: 12px 20px;
     font-size: 14px;
     width: fit-content;
   }
-  .cap {
+  .navbar-cap {
     position: absolute;
     top: 9px;
     left: 38px;
     width: 18px;
     height: auto;
   }
-  .santaimage {
+  .hero-image {
     object-fit: contain;
     max-width: 100%;
     align-self: center;
     padding-top: 20px;
     height: auto;
   }
-  .nav-links {
+  .navbar-links {
     display: none;
   }
-  .nav-actions {
+  .navbar-actions {
     display: none;
   }
   .mobile-controls {
@@ -441,7 +441,7 @@ html, body {
     align-items: center;
     gap: 10px;
   }
-  .hamburger {
+  .navbar-hamburger {
     display: block;
     font-size: 24px;
     cursor: pointer;
@@ -865,7 +865,7 @@ html, body {
   flex-direction: column;
   align-items: center;
 }
-.event-poster .subtitle-1 {
+.event-poster .eventtitle {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -886,7 +886,7 @@ html, body {
   color: #000;
 }
 
-.subtitle-1::before {
+.eventtitle::before {
   content: "";
   width: 50px;
   height: 1px;
@@ -921,7 +921,7 @@ html, body {
   margin-right: 10px;
   margin-bottom: 40px;
 }
-.event-tabs .btn-1-active {
+.event-tabs .event-active {
   color: #000;
   background: #f0f3f2;
   padding: 16px 30px;
@@ -950,7 +950,7 @@ html, body {
   display: none;
 }
 
-.event-f {
+.event-post {
   display: flex;
   align-items: center;
   gap: 24px;
@@ -963,7 +963,7 @@ html, body {
   max-width: 1100px;
   position: relative;
 }
-.event-f .image2 {
+.event-post .event-image {
   width: 300px;
   height: 220px;
   border-radius: 10px;
@@ -1002,7 +1002,7 @@ html, body {
   line-height: 28px;
 }
 
-.button-1 {
+.event-buttoncard {
   color: #fff;
   background: #ec1944;
   padding: 15px 30px;
@@ -1068,13 +1068,13 @@ html, body {
     display: flex;
     align-items: center;
   }
-  .event-f {
+  .event-post {
     flex-direction: column;
     width: 100%;
     padding: 20px 30px;
     gap: 20px;
   }
-  .event-f .image2 {
+  .event-post .event-image {
     width: 100%;
     height: 100%;
     margin-left: 0;
@@ -1098,7 +1098,7 @@ html, body {
     margin: 12px 0px;
     font-family: "Nunito", sans-serif;
   }
-  .button-1 {
+  .event-buttoncard {
     position: static;
     align-items: center;
     margin: 75px 240px 0px;
@@ -1149,13 +1149,13 @@ html, body {
     display: flex;
     align-items: center;
   }
-  .event-f {
+  .event-post {
     flex-direction: column;
     width: 100%;
     padding: 20px 30px;
     gap: 20px;
   }
-  .event-f .image2 {
+  .event-post .event-image {
     width: 100%;
     height: 100%;
     margin-left: 0;
@@ -1179,7 +1179,7 @@ html, body {
     margin: 12px 0px;
     font-family: "Nunito", sans-serif;
   }
-  .button-1 {
+  .event-buttoncard {
     position: static;
     align-items: center;
     margin: 45px 95px 10px;
@@ -1231,13 +1231,13 @@ html, body {
     display: flex;
     align-items: center;
   }
-  .event-f {
+  .event-post {
     flex-direction: column;
     width: 100%;
     padding: 20px 30px;
     gap: 20px;
   }
-  .event-f .image2 {
+  .event-post .event-image {
     width: 100%;
     height: 100%;
     margin-left: 0;
@@ -1261,7 +1261,7 @@ html, body {
     margin: 12px 0px;
     font-family: "Nunito", sans-serif;
   }
-  .button-1 {
+  .event-buttoncard {
     position: static;
     align-items: center;
     margin: 24px 70px 10px;
@@ -1283,7 +1283,7 @@ html, body {
   margin: 10px 0px 75px 0px;
 }
 
-.special {
+.plan-special {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1296,7 +1296,7 @@ html, body {
   letter-spacing: 2px;
   color: #ec1944;
 }
-.special::before {
+.plan-special::before {
   content: "";
   width: 40px;
   height: 1px;
@@ -1306,7 +1306,7 @@ html, body {
   margin-right: 10px;
 }
 
-.card {
+.plan-card {
   display: flex;
   gap: 30px;
   justify-content: center;
@@ -1363,7 +1363,7 @@ html, body {
   color: #525252;
 }
 
-.btnn {
+.plan-button {
   color: #fff;
   background: #ec1944;
   padding: 15px 30px;
@@ -1389,7 +1389,7 @@ html, body {
     line-height: 36px;
     margin: 0px 0px 75px 0px;
   }
-  .card {
+  .plan-card {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -1408,7 +1408,7 @@ html, body {
     line-height: 32px;
     margin: 0px 0px 50px 0px;
   }
-  .card {
+  .plan-card {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1418,7 +1418,7 @@ html, body {
     text-align: left;
     width: 100%;
   }
-  .btnn {
+  .plan-button {
     font-size: 16px;
     padding: 14px 30px;
     width: 320px;
@@ -1434,7 +1434,7 @@ html, body {
     line-height: 32px;
     margin: 0px 0px 50px 0px;
   }
-  .card {
+  .plan-card {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -1444,7 +1444,7 @@ html, body {
     text-align: left;
     width: 100%;
   }
-  .btnn {
+  .plan-button {
     font-size: 16px;
     padding: 14px 28px;
     width: 270px;
@@ -1477,7 +1477,7 @@ html, body {
   font-family: "Nunito", sans-serif;
 }
 
-.reg {
+.box-title {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1488,7 +1488,7 @@ html, body {
   margin-bottom: 20px;
   color: #fff;
 }
-.reg::before {
+.box-title::before {
   content: "";
   width: 40px;
   height: 1px;
@@ -1554,7 +1554,7 @@ html, body {
     line-height: 38px;
     margin-bottom: 50px;
   }
-  .reg {
+  .box-title {
     font-size: 14px;
     margin-bottom: 10px;
   }
@@ -1592,7 +1592,7 @@ html, body {
     margin-bottom: 50px;
     white-space: nowrap;
   }
-  .reg {
+  .box-title {
     font-size: 14px;
     letter-spacing: 1.5px;
   }
@@ -1632,7 +1632,7 @@ html, body {
     margin-bottom: 50px;
     max-width: 300px;
   }
-  .reg {
+  .box-title {
     font-size: 14px;
     letter-spacing: 1.5px;
     margin-bottom: 10px;
@@ -1672,7 +1672,7 @@ html, body {
   margin: 0px 0px 75px 0px;
 }
 
-.special1 {
+.testimonials-header {
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;
@@ -1684,7 +1684,7 @@ html, body {
   align-items: center;
   color: #ec1944;
 }
-.special1::before {
+.testimonials-header::before {
   content: "";
   width: 50px;
   height: 1px;
@@ -1693,20 +1693,20 @@ html, body {
   margin-right: 20px;
 }
 
-.container1 {
+.testimonials-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
 
-.card-wrap1 {
+.testimonials-wrap {
   display: flex;
   justify-content: center;
   gap: 20px;
   align-items: stretch;
 }
 
-.card01 {
+.testimonials-card {
   background: #f2f8f7;
   border-radius: 10px;
   padding: 35px 40px;
@@ -1729,11 +1729,11 @@ html, body {
   margin-bottom: 10px;
 }
 
-.user {
+.testimonials-user {
   display: flex;
   align-items: center;
 }
-.user img {
+.testimonials-user img {
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -1768,26 +1768,19 @@ html, body {
     line-height: 36px;
     margin: 0px 0px 50px 0px;
   }
-  .container1 {
+  .testimonials-container {
     max-width: 720px;
     margin: 0 auto;
   }
-  .card-wrap1 {
+  .testimonials-wrap {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
   }
-  .card01 {
+  .testimonials-card {
     width: 48%;
     min-height: 300px;
-  }
-  .card11 {
-    width: 48%;
-    min-height: 300px;
-  }
-  .card12 {
-    display: none;
   }
   .text {
     font-size: 20px;
@@ -1806,26 +1799,20 @@ html, body {
     line-height: 32px;
     margin: 0px 0px 40px 0px;
   }
-  .container1 {
+  .testimonials-container {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 10px;
   }
-  .card-wrap1 {
+  .testimonials-wrap {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
   }
-  .card01 {
+  .testimonials-card {
     width: 100%;
     min-height: auto;
-  }
-  .card12 {
-    display: none;
-  }
-  .card11 {
-    display: none;
   }
   .text {
     font-size: 20px;
@@ -1843,26 +1830,20 @@ html, body {
     line-height: 28px;
     margin: 0px 0px 30px 0px;
   }
-  .container1 {
+  .testimonials-container {
     max-width: 100%;
     margin: 0 auto;
     padding: 0 10px;
   }
-  .card-wrap1 {
+  .testimonials-wrap {
     display: flex;
     flex-direction: column;
     gap: 20px;
     align-items: center;
   }
-  .card01 {
+  .testimonials-card {
     width: 100%;
     min-height: auto;
-  }
-  .card12 {
-    display: none;
-  }
-  .card11 {
-    display: none;
   }
   .text {
     font-size: 20px;
@@ -1892,7 +1873,7 @@ html, body {
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   font-family: "Nunito", sans-serif;
   color: #fff;
 }
@@ -1905,7 +1886,7 @@ html, body {
   font-family: "Nunito", sans-serif;
 }
 
-.logo1 {
+.footer-logo {
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -1917,7 +1898,7 @@ html, body {
   margin-bottom: 20px;
 }
 
-.terms {
+.footer-terms {
   display: inline-block;
   font-size: 15px;
   color: white;
@@ -1929,12 +1910,12 @@ html, body {
   line-height: 28px;
   margin-top: 20px;
 }
-.terms:hover {
+.footer-terms:hover {
   text-decoration: underline;
   color: #fff;
 }
 
-.privacy {
+.footer-privacy {
   display: inline-block;
   font-size: 15px;
   color: white;
@@ -1946,15 +1927,16 @@ html, body {
   line-height: 28px;
   margin-top: 20px;
 }
-.privacy:hover {
+.footer-privacy:hover {
   text-decoration: underline;
   color: #fff;
 }
 
-.email1 {
+.footer-email {
   color: #4fd1c5;
   font-weight: 400;
-  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
   font-family: "Nunito", sans-serif;
   font-size: 16px;
 }
@@ -1979,10 +1961,10 @@ html, body {
   background: green;
 }
 
-.newsletter1 {
+.newsletter {
   margin-top: 12px;
 }
-.newsletter1 p {
+.newsletter p {
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -1990,7 +1972,7 @@ html, body {
   font-family: "Nunito", sans-serif;
   margin-bottom: 10px;
 }
-.newsletter1 input {
+.newsletter input {
   width: 100%;
   height: 48px;
   padding: 12px 14px;
@@ -2001,7 +1983,7 @@ html, body {
   font-family: "Nunito", sans-serif;
   font-size: 400;
 }
-.newsletter1 button {
+.newsletter button {
   color: #fff;
   background: #ec1944;
   padding: 15px 30px;
@@ -2023,14 +2005,14 @@ html, body {
 
 .footer-bottom {
   text-align: center;
-  padding: 20px;
+  padding: 65px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Nunito", sans-serif;
   color: #ccc;
 }
 
-.cap1 {
+.footer-cap {
   width: 22px;
   height: 24px;
   object-fit: cover;
