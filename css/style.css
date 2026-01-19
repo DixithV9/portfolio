@@ -123,23 +123,7 @@ html, body {
   left: 115px;
 }
 
-.navbar-button {
-  color: #fff;
-  background: #ec1944;
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-size: 17px;
-  cursor: pointer;
-  line-height: 17px;
-  height: 50px;
-  font-family: "Nunito", sans-serif;
-  bottom: 10px;
-  width: 150px;
-  font-weight: 600;
-  border: 0;
-}
-
-.hero-button {
+.navbar-button, .newsletter button, .form-click button, .plan-button, .event-buttoncard, .about-container .about-button, .hero-button {
   color: #fff;
   background: #ec1944;
   padding: 15px 30px;
@@ -323,7 +307,7 @@ html, body {
     padding: 100px 40px;
     height: auto;
   }
-  .navbar-button {
+  .navbar-button, .newsletter button, .form-click button, .plan-button, .event-buttoncard, .about-container .about-button, .hero-button {
     align-self: flex-start;
     margin-top: 0;
   }
@@ -409,7 +393,7 @@ html, body {
     padding: 85px 15px;
     height: auto;
   }
-  .navbar-button {
+  .navbar-button, .newsletter button, .form-click button, .plan-button, .event-buttoncard, .about-container .about-button, .hero-button {
     align-self: flex-start;
     margin-top: 4px;
     padding: 12px 20px;
@@ -504,19 +488,6 @@ html, body {
   font-family: "Nunito", sans-serif;
 }
 .about-container .about-button {
-  color: #fff;
-  background: #ec1944;
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-size: 17px;
-  cursor: pointer;
-  line-height: 17px;
-  height: 50px;
-  font-family: "Nunito", sans-serif;
-  bottom: 10px;
-  width: 150px;
-  font-weight: 600;
-  border: 0;
   margin-top: 25px;
 }
 
@@ -1003,19 +974,6 @@ html, body {
 }
 
 .event-buttoncard {
-  color: #fff;
-  background: #ec1944;
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-size: 17px;
-  cursor: pointer;
-  line-height: 17px;
-  height: 50px;
-  font-family: "Nunito", sans-serif;
-  bottom: 10px;
-  width: 150px;
-  font-weight: 600;
-  border: 0;
   background: #1fb66d;
   position: absolute;
   right: 30px;
@@ -1364,19 +1322,6 @@ html, body {
 }
 
 .plan-button {
-  color: #fff;
-  background: #ec1944;
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-size: 17px;
-  cursor: pointer;
-  line-height: 17px;
-  height: 50px;
-  font-family: "Nunito", sans-serif;
-  bottom: 10px;
-  width: 150px;
-  font-weight: 600;
-  border: 0;
   width: 100%;
 }
 
@@ -1521,19 +1466,6 @@ html, body {
   outline: none;
 }
 .form-click button {
-  color: #fff;
-  background: #ec1944;
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-size: 17px;
-  cursor: pointer;
-  line-height: 17px;
-  height: 50px;
-  font-family: "Nunito", sans-serif;
-  bottom: 10px;
-  width: 150px;
-  font-weight: 600;
-  border: 0;
   background: #1fb66d;
   height: 50px;
   width: 170px;
@@ -1984,19 +1916,6 @@ html, body {
   font-size: 400;
 }
 .newsletter button {
-  color: #fff;
-  background: #ec1944;
-  padding: 15px 30px;
-  border-radius: 10px;
-  font-size: 17px;
-  cursor: pointer;
-  line-height: 17px;
-  height: 50px;
-  font-family: "Nunito", sans-serif;
-  bottom: 10px;
-  width: 150px;
-  font-weight: 600;
-  border: 0;
   width: 100%;
   font-weight: 700;
   text-transform: uppercase;
