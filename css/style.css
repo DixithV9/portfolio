@@ -1,4 +1,4 @@
- @import url('https://fonts.cdnfonts.com/css/nunito');
+@import url("https://fonts.cdnfonts.com/css/nunito");
 * {
   margin: 0;
   padding: 0;
@@ -30,8 +30,22 @@ html, body {
   overflow: hidden;
   height: 85px;
   border-bottom: none;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
   transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+  background-color: #fff;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar.scrolled .nav-links a,
+.navbar.scrolled .logo-text {
+  color: #000;
+}
+
+.navbar.scrolled .search,
+.navbar.scrolled .moon {
+  filter: invert(0);
 }
 
 .logo {
@@ -40,7 +54,7 @@ html, body {
   gap: 8px;
   color: #fff;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 700;
   margin-left: 0;
   padding-left: 70px;
 }
@@ -58,7 +72,7 @@ html, body {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 25px;
   margin-left: 350px;
 }
 .nav-links a {
@@ -68,7 +82,7 @@ html, body {
   font-weight: 700;
   font-size: 17px;
 }
-.nav-links:hover, .nav-links:active {
+.nav-links a:hover {
   color: #ec1944;
 }
 
@@ -86,8 +100,8 @@ html, body {
   width: 20px;
   height: 20px;
   object-fit: contain;
-  margin-left: 30px;
-  margin-right: 10px;
+  margin-left: 40px;
+  margin-right: 5px;
 }
 
 .moon {
@@ -97,7 +111,7 @@ html, body {
   height: 20px;
   object-fit: contain;
   gap: 10px;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 
 .cap {
@@ -1441,9 +1455,9 @@ html, body {
   display: flex;
   justify-content: center;
   overflow: hidden;
-  min-height: 90vh;
+  min-height: 100vh;
   width: 100%;
-  background: #ec1944 url(./images/tree-bg.png) no-repeat center;
+  background: #ec1944 url(../images/tree-bg.png) no-repeat center;
   background-size: cover;
 }
 

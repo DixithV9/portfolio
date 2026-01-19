@@ -35,8 +35,19 @@ html,body{
      overflow: hidden;
     height: 85px;
     border-bottom: none;
-    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
     transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+.navbar.scrolled{
+	background-color: $color2;
+	box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
+}
+.navbar.scrolled .nav-links a,
+.navbar.scrolled .logo-text{
+	color: $color3;
+}
+.navbar.scrolled .search,
+.navbar.scrolled .moon{
+	filter: invert(0);
 }
 .logo{
     display: flex;
@@ -44,7 +55,7 @@ html,body{
      gap: 8px;
      color:$color2;
      font-size: 30px;
-     font-weight: 600;
+     font-weight: 700;
      margin-left: 0;
       padding-left: 70px;
 }
@@ -59,7 +70,7 @@ html,body{
 .nav-links{
      list-style: none;
      display: flex;
-     gap: 30px;
+     gap: 25px;
      margin-left: 350px;
     a{
          text-decoration: none;
@@ -68,9 +79,11 @@ html,body{
      font-weight: 700;
      font-size: 17px;
     }
-    &:hover,&:active{
+	a{
+    &:hover{
         color:$color1;
     }
+}
 }
 .nav-actions{
      display: flex;
@@ -85,8 +98,8 @@ html,body{
     width: 20px;
     height: 20px;
     object-fit: contain;
-    margin-left: 30px;
-    margin-right: 10px;
+    margin-left: 40px;
+    margin-right: 5px;
 }
 .moon{
     filter: invert(1);
@@ -95,7 +108,7 @@ html,body{
     height: 20px;
     object-fit: contain;
     gap: 10px;
-    margin-left: 10px;
+    margin-left: 5px;
     
 }
 .cap{
@@ -1355,10 +1368,11 @@ margin-top: 50px;
   display: flex;
   justify-content: center;
 overflow: hidden;
-min-height: 90vh;
+min-height: 100vh;
 width: 100%;
-background:$color1 url(./images/tree-bg.png) no-repeat center;
+background:$color1 url(../images/tree-bg.png) no-repeat center;
 background-size: cover;
+
 }
 .register-box{
   width: 100%;
@@ -1386,7 +1400,7 @@ background-size: cover;
     margin-bottom: 20px;
     color:$color2;
     &::before{
-         content: "";
+     content: "";
     width: 40px;
     height: 1px;
     background:$color2;
